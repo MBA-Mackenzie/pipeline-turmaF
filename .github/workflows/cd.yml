@@ -1,5 +1,5 @@
 on:
-  workflow_dispatch: # Permite que o aluno teste o botão manual
+  workflow_dispatch: # Permite que o responsável teste o botão manual
 
 permissions:
   contents: read
@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages # Lembre-se de configurar este ambiente no GitHub!
+      name: github-pages # Lembre-se de configurar este ambiente no GitHub
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
